@@ -3,22 +3,19 @@
 using namespace std;
 
 int removeElement(vector<int>& nums, int val) {
-    int k = 0;
-    for(int i = 0; i < nums.size(); i++){
-        if(val == nums[i])
-            k++;
-        else{
-            nums[i - k] = nums[i];
-            k = 0;
+    vector<int>::iterator it = nums.begin();
+    while(it != nums.end()){
+        if((*it) == val){
+            nums.erase(it);
         }
+        it++;
     }
-    int length = nums.size();
-    return length;
+    return int(nums.size());
 }
 
 int main(){
-    vector<int> nums = {0,1,2,2,3,0,4,2};
-    int len = removeElement(nums,2);
+    vector<int> nums = {3,2,2,3};
+    int len = removeElement(nums,3);
     cout << len << endl;
     return 0;
 }
