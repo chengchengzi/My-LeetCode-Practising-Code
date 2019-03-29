@@ -4,30 +4,24 @@
 using namespace std;
 
 /*
-	题目：找到字符串内所有连续子符串（连续字串长度至少是3）的起始和终止位置
+	题目：找到字符串内所有连续子符串的起始和终止位置(连续字串长度至少是3)
 */
 vector<vector<int>> largeGroupPositions(string S) {
-	vector<vector<int>> result;
-	map<char, int> mark;
-	int sub_sum = 0;
-	for (int i = 0; i < S.size() - 1; i++) {
-		if (S[i] == S[i + 1])
-			sub_sum++;
-		else {
-			if (sub_sum >= 3) {
-				mark.insert(std::pair<char, int>(S[i], sub_sum));
-				sub_sum = 0;
-			}
-		}
+	int i = 0, j = 0;
+	vector<vector<int>> res;
+	while (j < S.size() ){
+		while (j < S.size() && S[j] == S[i]) ++j;
+		if (j - i >= 3)
+			res.push_back({ i, j - 1 });
+		i = j;
 	}
-
-	for()
-	return result;
+	return res;
 }
 
 int main() {
 	string S = "abbxxxxzyy";
-	vector<vector<int>> result = largeGroupPositions(S);
+	string S1 = "abcdddeeeeaabbbcd";
+	vector<vector<int>> result = largeGroupPositions(S1);
 	for (auto w : result)
 		for (auto v : w)
 			cout << v << " ";
