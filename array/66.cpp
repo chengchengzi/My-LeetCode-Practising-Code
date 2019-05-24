@@ -2,7 +2,10 @@
 #include<vector>
 using namespace std;
 
-//在vector上实现加法
+/**
+    66.Plus one
+    idea：实际是在做加法，每一位按十进制做加法，有进位就往前进位
+*/
 vector<int> plusOne(vector<int>& digits) {
         vector<int> temp_result,result;
         int flag = 1;   //加法的进位标志
@@ -15,7 +18,7 @@ vector<int> plusOne(vector<int>& digits) {
             temp_result.push_back(temp);
         }
 
-        //flag为1，说明要增加一位最高位+1
+        //flag为1，说明要增加一位最高位1
         if(flag)
             result.push_back(1);
 
