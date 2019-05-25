@@ -30,5 +30,6 @@
 - 896 [Monotonic Array](array/896.cpp)
 - 905 [Sort Array By Parity](array/905.cpp)
 - 922 [Sort Array By Parity II](array/933.cpp)
+- 976 [Largest Perimeter Triangle](array/976.cpp)
 - 977 [Squares of a Sorted Array](array/977.cpp)
 - 985 [Sum of Even Numbers After Queries](array/985.cpp)
