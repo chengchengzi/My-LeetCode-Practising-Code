@@ -20,7 +20,7 @@
 - 561 [Array Partition I](array/561.cpp)
 - 566 [Reshape the Matrix](array/566.cpp)
 - 661 [Image Smoother](array/661.cpp) 未通过
-- 724 [Find pivot Index](array/724.cpp)未通过
+- 724 [Find pivot Index](array/724.cpp)
 - 746 [Min Cost Climbing Stairs](arary/746.cpp)
 - 766 [Toeplit Matrix](array/766.cpp)
 - 830 [Position of Large Groups](array/830.cpp)
