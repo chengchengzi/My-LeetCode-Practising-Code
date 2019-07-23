@@ -35,3 +35,4 @@
 - 985 [Sum of Even Numbers After Queries](array/985.cpp)
 - 1013[Partition Array Into Three Parts With Equal Sum](array/1013.cpp)
 - 118[Pascal's Triangle](array/118.cpp)
+- 53[Maximum Subarray](array/53.cpp)
