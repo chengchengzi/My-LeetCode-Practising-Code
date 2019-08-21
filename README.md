@@ -37,3 +37,6 @@
 - 118[Pascal's Triangle](array/118.cpp)
 - 53[Maximum Subarray](array/53.cpp)
 - 26[Remove Duplicates from Sorted Array](array/26.cpp)
+- 66[Plus One](array/66.cpp)
+- 88[Merge Sorted Array](array/88.cpp)
+- 189[Rotate Array](array/189.cpp)
